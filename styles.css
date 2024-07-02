@@ -42,55 +42,119 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-weight: bold;
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .contact-btn {
-    background-color: #00b5ad;
-    color: #fff;
-    border: none;
     padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    color: #ffffff80;
+    text-shadow: none;
+    background: transparent;
     cursor: pointer;
-    border-radius: 5px;
+    box-shadow: transparent;
+    border: 1px solid #ffffff80;
+    transition: 0.5s ease;
+    user-select: none;
 }
 
+.contact-btn:hover,
+.contact-btn:focus {
+    color: #ffffff;
+    background: #008cff;
+    border: 1px solid #008cff;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+        0 0 100px #008cff;
+}
+
+
 .hero {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 175px 80px 175px;
     background-image: url(bg.png);
     color: #fff;
+    overflow: hidden;
+
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .hero-content {
+    position: relative;
     max-width: 50%;
     text-align: left;
+    margin-left: 100px;
+    z-index: 2; /* Ensure content is above particles */
 }
+
 
 .hero h1 {
     font-size: 96px;
     margin: 0;
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .hero h1 span {
     color: #00b5ad;
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .hero p {
-    font-size: 28px;
     margin: 20px 0;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
 }
 
-.view-products-btn {
-    background-color: #00b5ad;
-    color: #fff;
-    border: none;
-    padding: 15px 30px;
+.hero .btn {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #ffffff80;
+    text-shadow: none;
+    background: transparent;
     cursor: pointer;
-    border-radius: 5px;
-    font-weight: bold;
+    box-shadow: transparent;
+    border: 1px solid #ffffff80;
+    transition: 0.5s ease;
+    user-select: none;
 }
+
+.hero .btn:hover,
+.hero .btn:focus {
+    color: #ffffff;
+    background: #008cff;
+    border: 1px solid #008cff;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff, 0 0 100px #008cff;
+}
+
 
 .hero-icon {
     max-width: 40%;
@@ -290,3 +354,274 @@ body {
     }
 }
 
+@media (max-width: 900px) {
+    body {
+        font-size: 75%;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-content {
+        max-width: 80%;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .hero button {
+        font-size: 14px;
+    }
+
+    .hero-icon {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .splitview {
+        flex-direction: column;
+    }
+
+    .panel {
+        position: relative;
+        width: 100%;
+        min-height: auto;
+    }
+
+    .panel img {
+        width: 90%;
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin: 20px auto;
+    }
+
+    .panel .description {
+        width: 90%;
+        position: relative;
+        top: auto;
+        transform: none;
+        padding: 10px;
+    }
+
+    .handle {
+        display: none;
+    }
+
+    .top, .bottom {
+        width: 100%;
+        transform: none;
+        margin-left: 0;
+    }
+
+    .top .content, .bottom .content {
+        transform: none;
+        margin-left: 0;
+    }
+}
+
+.faq {
+    padding: 50px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.faq h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card {
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+
+.card-header h2 {
+    margin: 0;
+}
+
+.card-body {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.card-body p {
+    margin: 0;
+}
+
+.btn-link {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-link i {
+    margin-right: 10px;
+}
+
+.btn-link.collapsed i {
+    transform: rotate(0);
+}
+
+.btn-link i {
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+.collapse.show .btn-link i {
+    transform: rotate(135deg);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+
+.faq {
+  --bg: #fff;
+  --text: #7288a2;
+  --gray: #4d5974;
+  --lightgray: #e5e5e5;
+  --blue: #03b5d2;
+
+  * {
+    box-sizing: border-box;
+    &::before, &::after {
+      box-sizing: border-box;
+    }
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind', sans-serif;
+    background: var(--bg);
+    color: var(--gray);
+    display: flex;
+    min-height: 100vh;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 4rem;
+    width: 48rem;
+  }
+
+  .accordion {
+    .accordion-item {
+      border-bottom: 1px solid var(--lightgray);
+      button[aria-expanded='true'] {
+        border-bottom: 1px solid var(--blue);
+      }
+    }
+    button {
+      position: relative;
+      display: block;
+      text-align: left;
+      width: 100%;
+      padding: 1em 0;
+      color: var(--text);
+      font-size: 1.15rem;
+      font-weight: 400;
+      border: none;
+      background: none;
+      outline: none;
+      &:hover, &:focus {
+        cursor: pointer;
+        color: var(--blue);
+        &::after {
+          cursor: pointer;
+          color: var(--blue);
+          border: 1px solid var(--blue);
+        }
+      }
+      .accordion-title {
+        padding: 1em 1.5em 1em 0;
+      }
+      .icon {
+        display: inline-block;
+        position: absolute;
+        top: 18px;
+        right: 0;
+        width: 22px;
+        height: 22px;
+        border: 1px solid;
+        border-radius: 22px;
+        &::before {
+          display: block;
+          position: absolute;
+          content: '';
+          top: 9px;
+          left: 5px;
+          width: 10px;
+          height: 2px;
+          background: currentColor;
+        }
+        &::after {
+          display: block;
+          position: absolute;
+          content: '';
+          top: 5px;
+          left: 9px;
+          width: 2px;
+          height: 10px;
+          background: currentColor;
+        }
+      }
+    }
+    button[aria-expanded='true'] {
+      color: var(--blue);
+      .icon {
+        &::after {
+          width: 0;
+        }
+      }
+      + .accordion-content {
+        opacity: 1;
+        max-height: 9em;
+        transition: all 200ms linear;
+        will-change: opacity, max-height;
+      }
+    }
+    .accordion-content {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 200ms linear, max-height 200ms linear;
+      will-change: opacity, max-height;
+      p {
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 2em 0;
+      }
+    }
+  }
+}
