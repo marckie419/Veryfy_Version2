@@ -2,17 +2,13 @@ html {
     scroll-behavior: smooth;
 }
 
-main {
-    scroll-snap-type: y mandatory;
-}
-
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #fff;
     color: #333;
-    
 }
+
 
 header {
     display: flex;
@@ -196,15 +192,8 @@ nav ul li a {
 section {
     padding: 20px;
     text-align: center;
-    scroll-snap-align: start;
 }
 
-footer {
-    background-color: #1a1a1a;
-    padding: 20px;
-    text-align: center;
-    color: #fff;
-}
 
 .footer-links, .social-media, .legal, .credits {
     margin-bottom: 10px;
@@ -624,4 +613,106 @@ body {
       }
     }
   }
+}
+
+
+.footer {
+    background: #101010;
+    color: #d3d3d3;
+    height: auto;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 80px;
+}
+
+.footer .footer-section {
+    flex: 1;
+    padding: 10px 20px;
+}
+
+.footer .footer-section.about .logo-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.footer .footer-section.about .contact span {
+    display: block;
+    margin: 2px 0;
+}
+
+.footer .footer-section.about .socials a {
+    border: 1px solid #fff;
+    width: 45px;
+    height: 41px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.footer .footer-section.about .socials a:hover {
+    border: 1px solid #b3b3b3;
+    color: #b3b3b3;
+}
+
+.footer .footer-section.links ul a {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.footer .footer-section.links ul a:hover {
+    color: #b3b3b3;
+    padding-left: 5px;
+}
+
+.footer .footer-section.contact-form .contact-input {
+    background: #5e5e5e;
+    border: none;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    padding: .9rem 1.4rem;
+    color: #d3d3d3;
+    width: calc(100% - 22px);
+}
+
+.footer .footer-section.contact-form .contact-input:focus {
+    background: #b3b3b3;
+}
+
+.footer .footer-bottom {
+    background: #343a40;
+    color: #686868;
+    height: 50px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+.footer .footer-bottom a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer .footer-bottom a:hover {
+    color: #b3b3b3;
 }

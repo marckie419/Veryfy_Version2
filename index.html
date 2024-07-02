@@ -13,6 +13,8 @@
     <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 
 <body>
@@ -113,24 +115,50 @@
       </div>
 </section>
     </main>
-    <footer>
-        <div class="footer-links">
-            <a href="#products">Products</a>
-            <a href="#solutions">Solutions</a>
-            <a href="#case-study">Case Study</a>
-            <a href="#support">Support</a>
-            <a href="#about-us">About</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2 class="logo-text"><span>Veryfy</span>Global</h2>
+                <p>
+                    Veryfy Global is a leading technology company specializing in the development of cutting-edge APIs.
+                </p>
+                <div class="contact">
+                    <span><i class="fas fa-phone"></i> &nbsp; 123-456-789</span>
+                    <span><i class="fas fa-envelope"></i> &nbsp; info@veryfy.com</span>
+                </div>
+                <div  class="socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <br>
+                <ul>
+                    <a href="#"><li>About Us</li></a>
+                    <a href="#"><li>Contact Us</li></a>
+                </ul>
+            </div>
+            <div class="footer-section contact-form">
+                <h2>Contact Us</h2>
+                <br>
+                <form action="index.html" method="post">
+                    <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
+                    <textarea rows="4" name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+                    <button type="submit" class="btn btn-big contact-btn">
+                        <i class="fas fa-envelope"></i>
+                        Send
+                    </button>
+                </form>
+            </div>
         </div>
-        <div class="social-media">
-            <!-- Add social media icons here -->
-        </div>
-        <div class="legal">
-            <a href="#terms">Terms & Conditions</a>
-            <a href="#privacy">Privacy Policy</a>
+        <div class="footer-bottom">
+            &copy; veryfy.com
         </div>
     </footer>
+    
     <script src="main.js"></script>
 </body>
 </html>
