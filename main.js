@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     items.forEach(item => item.addEventListener('click', toggleAccordion));
-    
+
 
 const galleryContainer = document.querySelector('.gallery-container');
 const galleryControlsContainer = document.querySelector('.gallery-controls');
@@ -100,7 +100,7 @@ class Carousel {
     this.updateGallery();
   }
 
-  setControls() {
+  setControls() { 
     this.carouselControls.forEach(control => {
       const button = document.createElement('button');
       button.className = `gallery-controls-${control}`;
